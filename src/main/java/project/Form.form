@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="project.Form">
+  <grid id="27dc6" binding="Panel" layout-manager="GridLayoutManager" row-count="12" column-count="12" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="643" height="496"/>
+    </constraints>
+    <properties>
+      <focusCycleRoot value="false"/>
+      <minimumSize width="325" height="258"/>
+      <name value="Panel"/>
+      <preferredSize width="800" height="500"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="cbd2a" binding="searchRadioButtonsPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="12" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <name value="buttonGroup"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="be1ac" class="javax.swing.JRadioButton" binding="makaleIDRadioButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <borderPainted value="false"/>
+              <selected value="true"/>
+              <text value="Makale ID"/>
+            </properties>
+          </component>
+          <component id="279b9" class="javax.swing.JRadioButton" binding="yılıRadioButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Yılı"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="56647" class="javax.swing.JButton" binding="araButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="12" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Ara"/>
+        </properties>
+      </component>
+      <component id="4031b" class="javax.swing.JTextField" binding="searchTextField">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="12" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="304586"/>
+        </properties>
+      </component>
+      <component id="b5256" class="javax.swing.JLabel" binding="aramaLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="9" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="2" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-10264992"/>
+          <font size="12"/>
+          <text value="Arama Kriterleri"/>
+        </properties>
+      </component>
+      <scrollpane id="2224a">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="12" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="aa38e" class="javax.swing.JList" binding="articleList">
+            <constraints/>
+            <properties>
+              <alignmentY value="0.5"/>
+              <enabled value="true"/>
+              <model/>
+              <selectionMode value="0"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="9f687" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="12" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <horizontalTextPosition value="2"/>
+          <text value="Detaylı bilgi için seçim"/>
+        </properties>
+      </component>
+      <component id="71560" class="javax.swing.JComboBox" binding="articlesComboBox">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="12" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <name value="articlesComboBox"/>
+        </properties>
+      </component>
+      <component id="5a579" class="javax.swing.JLabel" binding="articleDetails">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="12" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <name value="articleDetails"/>
+          <text value="..."/>
+        </properties>
+      </component>
+      <component id="560e0" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="12" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Seçtiğiniz makaleyi  PDF olarak açmak için çift tıklayınız"/>
+        </properties>
+      </component>
+      <component id="606c" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="9" column="0" row-span="1" col-span="12" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Başvuru tarihini öğrenmek istediğiniz sınavı seçin"/>
+        </properties>
+      </component>
+      <component id="3ccab" class="javax.swing.JComboBox" binding="osymComboBox">
+        <constraints>
+          <grid row="10" column="0" row-span="1" col-span="12" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="347ff" class="javax.swing.JLabel" binding="osymSinavTarihiLabel">
+        <constraints>
+          <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="..."/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="buttonGroup">
+      <member id="be576"/>
+      <member id="279b9"/>
+      <member id="be1ac"/>
+    </group>
+  </buttonGroups>
+</form>
